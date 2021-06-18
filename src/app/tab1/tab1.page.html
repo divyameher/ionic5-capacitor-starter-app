@@ -12,6 +12,32 @@
       <ion-title size="large">Tab 1</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-list>
+    <ion-list-header>
+      <ion-label>
+        Single Selection
+      </ion-label>
+    </ion-list-header>
+  
+    <ion-item>
+      <ion-label>Gender</ion-label>
+      <ion-select placeholder="Select One" interface="popover" mode="ios">
+        <ion-select-option value="f">Female</ion-select-option>
+        <ion-select-option value="m">Male</ion-select-option>
+      </ion-select>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>Hair Color</ion-label>
+      <ion-select value="brown" okText="Okay" cancelText="Dismiss">
+        <ion-select-option value="brown">Brown</ion-select-option>
+        <ion-select-option value="blonde">Blonde</ion-select-option>
+        <ion-select-option value="black">Black</ion-select-option>
+        <ion-select-option value="red">Red</ion-select-option>
+      </ion-select>
+    </ion-item>
+  
+  </ion-list>
 
   <app-explore-container name="Tab 1 page"></app-explore-container>
 </ion-content>
